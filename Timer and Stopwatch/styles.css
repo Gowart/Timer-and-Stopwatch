@@ -1,0 +1,410 @@
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.header-container {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
+    margin-right: 14px;
+}
+
+.header-left:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+    transition: 0.1s;
+}
+
+.header-left-center {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.header-timer {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #313131;
+}
+
+.header-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 15%);
+    margin-left: 14px;
+}
+
+.header-right:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+    transition: 0.1s;
+}
+
+.header-right-center {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.header-stopwatch {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #686868;
+}
+
+
+/* CLOCK */
+
+
+.clock-container {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 100px;
+    margin: auto;
+    padding-top: 34px;
+}
+
+.clock {
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #686868;
+}
+
+
+/* MAIN CONTAINER */
+
+
+.main-stopwatch-container {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+.stopwatch {
+    width: 100%;
+    height: 207px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.stopwatch-days {
+    width: 100%;
+    height: 100%;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right;
+    color: #686868;
+}
+
+.stopwatch-time {
+    width: 512px;
+    min-width: 512px;
+    height: 100%;
+    margin-top: -22px;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 96px;
+    text-align: center;
+    color: #313131;
+    display: flex;
+    justify-content: center;
+}
+
+.stopwatch-hours {
+    min-width: 127px;
+    text-align: right;
+}
+
+.stopwatch-minutes {
+    min-width: 127px;
+}
+
+.stopwatch-seconds {
+    min-width: 127px;
+    text-align: left;
+}
+
+.stopwatch-milliseconds {
+    width: 100%;
+    height: 100%;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: #686868;
+}
+
+.stopwatch-buttons {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 76px;
+    margin: auto;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 76px;
+    text-align: center;
+    color: #313131;
+}
+
+.stopwatch-button-start {
+    width: 350px;
+    height: 76px;
+    border: 1px solid #686868;
+    border-radius: 17px;
+    margin-right: 31px;
+    transition: 0.1s;
+}
+
+.stopwatch-button-start:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    transition: 0.1s;
+}
+
+.stopwatch-button-clear {
+    width: 350px;
+    height: 76px;
+    border: 1px solid #686868;
+    border-radius: 17px; 
+    margin-left: 31px;  
+    transition: 0.1s;
+}
+
+.stopwatch-button-clear:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    transition: 0.1s;
+}
+
+
+/* TIMER */
+
+
+.main-data-container {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+.timer {
+    width: 100%;
+    height: 207px;
+    margin-top: 100px;
+    display: flex;
+}
+
+.timer-days {
+    width: 100%;
+    height: 100%;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: right;
+    color: #686868;
+}
+
+.timer-time {
+    width: 512px;
+    min-width: 512px;
+    height: 100%;
+    margin-top: -22px;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 96px;
+    text-align: center;
+    color: #313131;
+    display: flex;
+    justify-content: center;
+}
+
+.timer-hours {
+    min-width: 127px;
+    text-align: right;
+}
+
+.timer-minutes {
+    min-width: 127px;
+}
+
+.timer-seconds {
+    min-width: 127px;
+    text-align: left;
+}
+
+.timer-milliseconds {
+    width: 100%;
+    height: 100%;
+    font-family: 'Atomic Age', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: left;
+    color: #686868;
+}
+
+.timer-buttons {
+    max-width: 1280px;
+    min-width: 800px;
+    height: 76px;
+    margin: auto;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 76px;
+    text-align: center;
+    color: #313131;
+}
+
+.timer-button-start {
+    width: 212px;
+    height: 76px;
+    border: 1px solid #686868;
+    border-radius: 17px;
+    transition: 0.1s;
+}
+
+.timer-button-start:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    transition: 0.1s;
+}
+
+.timer-button-pause {
+    width: 212px;
+    height: 76px;
+    border: 1px solid #686868;
+    border-radius: 17px;    
+    margin: 0px 63px;
+    transition: 0.1s;
+}
+
+.timer-button-pause:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    transition: 0.1s;
+}
+
+.timer-button-clear {
+    width: 212px;
+    height: 76px;
+    border: 1px solid #686868;
+    border-radius: 17px;   
+    transition: 0.1s;
+}
+
+.timer-button-clear:hover {
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);transition: 0.1s;
+}
+
+
+/* INPUTS */
+
+
+.inputs-timer {
+    width: 100%;
+    height: 217px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    width: 142px;
+    height: 102px;
+    border: 1px solid #686868;
+    border-radius: 35px; 
+    margin: 0 12px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    color: #313131;
+    background-color: #ffffff;
+    transition: 0.1s;
+}
+
+.input:focus,
+.input:hover {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 47px;
+    text-align: center;
+    color: #000000;
+    background-color: #fafafa;
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
